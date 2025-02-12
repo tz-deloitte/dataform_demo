@@ -8,4 +8,4 @@ config {
 SELECT
   *
 FROM
-  {{ ref("staging_table_dataform") }}
+  { ref("staging_table_dataform") }
