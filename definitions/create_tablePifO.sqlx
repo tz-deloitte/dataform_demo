@@ -1,0 +1,14 @@
+config {
+    type: "table",
+    schema: "dataform_itabak",
+    name: "final_table",
+    dependencies: ["check_for_O"],
+    dependOnDependencyAssertions: true
+}
+
+SELECT
+  *
+FROM
+  {{ ref("staging_table_dataform") }}
+WHERE
+  O_ORDERSTATUS = 'O'
