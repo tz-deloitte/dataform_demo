@@ -10,7 +10,7 @@ SET
   -- Change this to 'K' for the other branch
   -- Branch 1: Create table if my_variable is 'O'
 IF
-  (my_variable = 'K') THEN
+  ('{{ var("my_var") }}' = 'K') THEN
 EXECUTE IMMEDIATE
   '''
   CREATE OR REPLACE TABLE dataform_itabak.table_K AS
