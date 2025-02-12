@@ -3,3 +3,4 @@ defaultLocation: me-west1
 defaultDataset: dataform_itabak
 defaultAssertionDataset: dataform_assertions
 dataformCoreVersion: 3.0.0
+vars:{"myvar": "O"}
