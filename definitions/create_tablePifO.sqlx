@@ -2,8 +2,9 @@ config {
     type: "table",
     schema: "dataform_itabak",
     name: "final_table",
-    dependencies: ["check_for_O"],
-    dependOnDependencyAssertions: true
+    dependOnDependencyAssertions: true,
+    dependencies: ["check_for_O", {name: "staging_table_dataform", includeDependentAssertions: true}]
+
 }
 
 SELECT

@@ -1,0 +1,11 @@
+config {
+    type: "table",
+    schema: "dataform_itabak",
+    assertions: {rowConditions: ['O_ORDERSTATUS = "O"']}
+
+}
+
+SELECT
+  *
+FROM
+  {{ ref("staging_table_dataform") }}
