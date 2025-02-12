@@ -8,4 +8,4 @@ SELECT
     WHEN EXISTS (SELECT 1 FROM ref{{("staging_table_dataform")}} WHERE O_ORDERSTATUS = 'O') 
     THEN TRUE 
     ELSE FALSE 
-  END AS has_ones;
+  END AS has_ones
