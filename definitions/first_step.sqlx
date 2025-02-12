@@ -1,0 +1,10 @@
+config {
+    type: "table",
+    schema: "dataform_itabak",
+    name: "staging_table_dataform"
+}
+
+SELECT
+   *
+FROM
+  me-sb-dgcp-dpoc-data-pr.dataform_itabak.dataform_rawdata
