@@ -1,0 +1,16 @@
+config {
+    type: "table",
+    schema: "dataform_itabak",
+    name: "success_table",
+    dependencies: ["check_condition"],
+    dependOnDependencyAssertions: true
+}
+
+SELECT
+  *
+FROM
+  ${ref("dataform_table")}
+WHERE
+  O_ORDERSTATUS = "O"
+LIMIT
+  30

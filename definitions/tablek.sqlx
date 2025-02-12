@@ -1,0 +1,22 @@
+config {
+    type: "operations",
+    name: "conditional_table_creation_k"
+}
+
+DECLARE
+  my_variable STRING;
+SET
+  my_variable = 'K';
+  -- Change this to 'K' for the other branch
+  -- Branch 1: Create table if my_variable is 'O'
+IF
+  (my_variable = 'K') THEN
+EXECUTE IMMEDIATE
+  '''
+  CREATE OR REPLACE TABLE dataform_itabak.table_K AS
+  SELECT * from ${ref("success_table")} WHERE
+  O_ORDERSTATUS = "K"
+  '''
+  ;
+END IF
+  ;

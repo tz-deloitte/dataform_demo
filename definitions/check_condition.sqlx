@@ -1,0 +1,13 @@
+config {
+    type: "assertion",
+    name: "check_condition"
+}
+
+SELECT
+  TRUE AS myresult
+FROM
+  ${ref("dataform_table")}
+WHERE
+  O_ORDERSTATUS <> "K" AND  O_ORDERSTATUS <> "O"
+LIMIT
+  1

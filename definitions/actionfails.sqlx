@@ -1,0 +1,20 @@
+config {
+    type: "operations",
+    name: "delete_temp_table",
+    dependencies: ["check_condition"]
+}
+
+DECLARE
+  assertion_passed BOOL;
+SET
+  assertion_passed = (
+  SELECT
+    myresult
+  FROM
+    ${ref("check_condition")});
+IF
+  (assertion_passed IS NULL) THEN
+EXECUTE IMMEDIATE
+  'CREATE OR REPLACE VIEW dataform_itabak.myview2 AS (SELECT * from ${ref("dataform_table")} LIMIT 1)';
+END IF
+  ;
