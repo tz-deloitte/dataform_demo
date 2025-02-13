@@ -1,0 +1,8 @@
+config {
+  type: "table",
+  dependencies: ["second_table"] 
+}
+
+SELECT *
+FROM
+  ${ref('second_table')}

@@ -1,0 +1,13 @@
+config {
+    type: "incremental",
+    description: "Description of the table",
+    columns: {
+        randon_number: "A random number generated for each row",
+        current_timestamp: "The current timestamp when the row is inserted"
+    },
+    name: "first_table"
+}
+
+SELECT
+  RAND() AS randon_number,
+  CURRENT_TIMESTAMP() AS current_timestamp
