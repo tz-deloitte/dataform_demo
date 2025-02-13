@@ -1,6 +1,6 @@
 config {
     type: "operations",
-    name: "delete_temp_table",
+    name: "create_view",
     dependencies: ["check_condition"]
 }
 

@@ -3,11 +3,11 @@ config {
     name: "check_condition"
 }
 
-SELECT
-  TRUE AS myresult
-FROM
-  ${ref("dataform_table")}
-WHERE
-  O_ORDERSTATUS <> "K" AND  O_ORDERSTATUS <> "O"
-LIMIT
-  1
+
+
+SELECT TRUE as myresult
+FROM ${ref("dataform_table")}
+WHERE NOT EXISTS (
+  SELECT 1 FROM ${ref("dataform_table")} WHERE O_ORDERSTATUS = '${dataform.projectConfig.vars.my_var}'
+)
+
