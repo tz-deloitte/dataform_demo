@@ -13,7 +13,7 @@ SET
   FROM
     ${ref("check_condition")});
 IF
-  (assertion_passed IS NULL) THEN
+  (assertion_passed IS NOT NULL) THEN
 EXECUTE IMMEDIATE
   'CREATE OR REPLACE VIEW dataform_itabak.myview2 AS (SELECT * from ${ref("dataform_table")} LIMIT 1)';
 END IF
