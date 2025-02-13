@@ -1,6 +1,7 @@
 config {
     type: "table",
-    schema: "dataform"
+    schema: "dataform",
+    tags: ["poc"]
 }
 
 select
