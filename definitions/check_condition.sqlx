@@ -7,7 +7,7 @@ config {
 
 SELECT TRUE as myresult
 FROM ${ref("dataform_table")}
-WHERE NOT EXISTS (
+WHERE EXISTS (
   SELECT 1 FROM ${ref("dataform_table")} WHERE O_ORDERSTATUS = '${dataform.projectConfig.vars.my_var}'
 ) LIMIT 1
 
