@@ -3,6 +3,6 @@ config {
     name: "get_error"
 }
 
-alter table `me-sb-dgcp-dpoc-data-pr.dataform_itabak.success_table` alter column O_ORDERPRIORITY SET DATA TYPE NUMERIC;
+alter table ${ref("success_table")} alter column O_ORDERPRIORITY SET DATA TYPE NUMERIC;
 
 --SELECT CAST('hello' AS NUMERIC) FROM ${ref("success_table")}
