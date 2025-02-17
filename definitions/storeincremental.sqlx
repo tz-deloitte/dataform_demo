@@ -1,0 +1,8 @@
+config {
+  type: "incremental",
+  schema: "dataform_itabak",
+  name:"table_O1"
+}
+
+SELECT *
+FROM   ${ref("success_table")} limit 1
