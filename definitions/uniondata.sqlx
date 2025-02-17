@@ -1,0 +1,11 @@
+config {
+    type: "table",
+    schema: "dataform_itabak",
+    name: "uniontable"
+
+}
+
+
+SELECT * FROM ${ref("success_table")}
+union all
+SELECT * FROM ${ref("table_O1")}
