@@ -1,0 +1,15 @@
+config {
+    type: "incremental",
+    description: "Description of the table",
+    name: "labeling_test",
+    bigquery: {
+    partitionBy: "DATE(ts)",
+    labels: {
+      Label: "labeling_testing"
+    }
+  }
+}
+
+SELECT
+  RAND() AS randon_number,
+  CURRENT_TIMESTAMP() AS current_timestamp
