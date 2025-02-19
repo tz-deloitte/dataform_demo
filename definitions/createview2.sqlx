@@ -1,6 +1,6 @@
 config {
     type: "view",
-    name: "myview3",
+    name: "viewbytype",
     dependencies: ["check_condition"]
 }
 

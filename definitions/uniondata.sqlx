@@ -8,4 +8,4 @@ config {
 
 SELECT * FROM ${ref("success_table")}
 union all
-SELECT * FROM ${ref("table_O1")}
+SELECT * FROM ${ref("table_incremental")}

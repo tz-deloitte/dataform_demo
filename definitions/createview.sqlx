@@ -15,6 +15,6 @@ SET
 IF
   (assertion_passed IS NULL) THEN
 EXECUTE IMMEDIATE
-  'CREATE OR REPLACE VIEW dataform_itabak.myview2 AS (SELECT * from ${ref("dataform_table")} LIMIT 1)';
+  'CREATE OR REPLACE VIEW dataform_itabak.viewbyscript AS (SELECT * from ${ref("dataform_table")} LIMIT 1)';
 END IF
   ;
