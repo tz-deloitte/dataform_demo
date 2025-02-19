@@ -1,0 +1,8 @@
+config {
+    type: "view",
+    name: "myview3",
+    dependencies: ["check_condition"]
+}
+
+
+SELECT * from ${ref("dataform_table")} LIMIT 3
