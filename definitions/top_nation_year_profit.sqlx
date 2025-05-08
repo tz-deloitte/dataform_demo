@@ -1,6 +1,7 @@
 config {
     type: "incremental",
-    schema: "dataform"
+    schema: "dataform",
+    tags: ["40"]
 }
 
 SELECT
