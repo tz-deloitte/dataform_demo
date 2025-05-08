@@ -4,6 +4,7 @@ config {
     tags: ["40"]
 }
 
+
 SELECT
     nation,
     o_year,
