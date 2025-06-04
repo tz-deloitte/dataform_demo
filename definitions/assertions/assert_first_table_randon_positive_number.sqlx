@@ -1,5 +1,6 @@
 config {
   type: "assertion",
+  name: "77",
   tags: ["77"]
 }
 
