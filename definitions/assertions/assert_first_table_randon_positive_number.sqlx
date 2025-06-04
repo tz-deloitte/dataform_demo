@@ -1,9 +1,9 @@
 config {
   type: "assertion",
-  name: "77",
+  name: "assertion_test_77",
   tags: ["77"],
   description: "first table where TRUE",
-  schema: "assertion_77",    
+  schema: "assertion_test",    
 }
 
 SELECT *
