@@ -1,0 +1,8 @@
+config {
+  type: "assertion",
+  tags: ["77"]
+}
+
+SELECT *
+FROM ${ref("first_table")}
+WHERE TRUE
