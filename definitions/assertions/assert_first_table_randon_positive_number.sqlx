@@ -1,7 +1,8 @@
 config {
   type: "assertion",
   name: "77",
-  tags: ["77"]
+  tags: ["77"],
+  description: "first table where TRUE"
 }
 
 SELECT *
