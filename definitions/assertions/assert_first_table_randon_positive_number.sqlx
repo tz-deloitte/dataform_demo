@@ -2,10 +2,10 @@ config {
   type: "assertion",
   name: "assertion_test_77",
   tags: ["77"],
-  description: "first table where TRUE",
+  description: "test where TRUE",
   schema: "assertion_test",    
 }
 
 SELECT *
 FROM UNNEST([1]) AS always_pass
-WHERE FALSE
+WHERE TRUE
