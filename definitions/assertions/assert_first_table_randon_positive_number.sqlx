@@ -3,7 +3,8 @@ config {
   name: "77",
   tags: ["77"],
   description: "first table where TRUE",
-  schema: "assertion_77",
+  schema: "assertion_77",    
+}
 
 SELECT *
 FROM ${ref("first_table")}
