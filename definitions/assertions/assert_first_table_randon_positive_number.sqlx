@@ -8,5 +8,4 @@ config {
 
 SELECT *
 FROM ${ref("first_table")}
-randon_number < 0
---WHERE TRUE
+WHERE FALSE
