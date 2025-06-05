@@ -1,9 +1,7 @@
 config {
     type: "assertion",
-    name: "assertion_test_77",
-    tags: ["78"],
+    tags: ["77"],
     description: "test where TRUE",
-    schema: "assertion_test",
 }
 
 SELECT
