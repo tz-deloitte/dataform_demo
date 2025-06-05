@@ -9,5 +9,6 @@ config {
 SELECT
   *
 FROM
-  UNNEST([1]) AS always_pass
-WHERE TRUE
+  ${ref('first_table')}
+WHERE
+randon_number < 1
