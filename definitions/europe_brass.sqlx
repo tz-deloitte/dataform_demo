@@ -1,7 +1,7 @@
 config {
     type: "table",
     schema: "dataform",
-     tags: ["20"]
+    tags: ["20"]
 }
 
 SELECT
@@ -13,7 +13,8 @@ SELECT
   s_address,
   s_phone,
   s_comment,
-  format_timestamp('%Y-%m-%d %H:%M:%E3S',TIMESTAMP(DATETIME(CURRENT_TIMESTAMP(), 'Asia/Jerusalem'))) as execution_timestamp
+  format_timestamp('%Y-%m-%d %H:%M:%E3S',TIMESTAMP(DATETIME(CURRENT_TIMESTAMP(), 'Asia/Jerusalem'))) as execution_timestamp,
+  CURRENT_TIMESTAMP() as now
        
 FROM
   ${ref('part')} part
