@@ -8,4 +8,4 @@ SELECT
   *
 FROM
   UNNEST([1]) AS always_pass
-WHERE FALSE
+WHERE TRUE
