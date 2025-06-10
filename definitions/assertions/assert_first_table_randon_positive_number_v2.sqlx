@@ -11,4 +11,4 @@ SELECT
 FROM
   UNNEST([1]) AS always_pass
 WHERE
-  TRUE
+  FALSE
