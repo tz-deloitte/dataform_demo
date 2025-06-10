@@ -3,7 +3,7 @@ config {
     name: "assertion_test_77",
     tags: ["77"],
     description: "test where is TRUE",
-    schema: "assertion_test,
+    schema: "assertion_test",
 }
 
 SELECT
