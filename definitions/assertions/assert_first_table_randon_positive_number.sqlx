@@ -1,5 +1,6 @@
 config {
     type: "assertion",
+    name: "assertion_test_78",
     tags: ["78"],
     description: "test where TRUE",
     schema: "assertion_test",
